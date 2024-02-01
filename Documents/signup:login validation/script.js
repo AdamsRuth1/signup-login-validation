@@ -16,7 +16,7 @@ document.getElementById("submit").addEventListener("click", function () {
  let storedEmails = JSON.parse(sessionStorage.getItem('userEmails')) || [];
 
  // Push the new email into the array
- storedEmails.push(emailInput);
+ storedEmails.push(emailInput.value);
 
  // Save the updated array back to sessionStorage
  sessionStorage.setItem('userEmails', JSON.stringify(storedEmails));
